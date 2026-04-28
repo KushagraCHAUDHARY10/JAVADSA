@@ -2,9 +2,17 @@
 //F(0) = 0, F(1) = 1
 //F(n) = F(n - 1) + F(n - 2), for n > 1.
 //Given n, calculate F(n).
-class Solution {
+import java.util.*;
+class febonacci {
     public int fib(int n) {
         if(n<=1) return n;
         return fib(n-1)+fib(n-2);
     }
+    public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter index");
+		int n = sc.nextInt();
+		febonacci fb = new febonacci();
+		System.out.println(fb.fib(n));
+	}
 }
